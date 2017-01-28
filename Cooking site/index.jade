@@ -1,0 +1,93 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width:device-width, initial-scale=1")
+    title Ponavljanje 2.0
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css")
+    link(rel="stylesheet", href="style.css")
+  body
+        #wrapper
+            header
+                button.expand
+                     span.bar  
+                     span.bar  
+                     span.bar  
+                h2 My Food
+                a.mail(href="mailto:someone@example.com") 
+                    img(src="img/mail.png", alt="pic")
+            nav.myNav
+                ul
+                    li.deactivate: a(href="#") Close Menu  
+                    li: a(href="#") Food    
+                    li: a(href="#") About    
+            main
+                include mixinFile
+                .flex-row
+                    +slidze('1', 'The Perfect Sandwich, A Real NYC Classic', 'Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.' )
+                    +slidze('2', 'Let Me Tell You About This Steak', 'Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.' )
+                    +slidze('3', 'Cherries, interrupted', 'Lorem ipsum text praesent tincidunt ipsum lipsum text.  Lorem ipsum text praesent tincidunt ipsum What else?' )
+                    +slidze('4', 'Once Again, Robust Wine and Vegetable Pasta', 'Lorem ipsum text praesent tincidunt ipsum lipsum.' )
+                .flex-row
+                    +slidze('5', 'The Perfect Sandwich, A Real NYC Classic', 'Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.' )
+                    +slidze('6', 'Let Me Tell You About This Steak', 'Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.' )
+                    +slidze('7', 'Cherries, interrupted', 'Lorem ipsum text praesent tincidunt ipsum lipsum text.  What else? ext praesent tincidunt ipsum lipsum text.  ' )
+                    +slidze('8', 'Once Again, Robust Wine and Vegetable Pasta', 'Lorem ipsum text praesent tincidunt ipsum lipsum.' )
+            aside
+                ul
+                    li.active: a.first(href="#") 1
+                    -for(i=2; i<5;i++)
+                        li: a(href="#")= i
+                    li: a(href="#").fa.fa-angle-right
+            hr
+            
+            article
+                h2 About me, The Food Man
+                img(src="img/about.jpg", alt="abt")
+                h3 I am Who I Am!
+                em With Passion For Real, Good Food
+                p
+                    |    Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+            hr
+            footer
+                .ft-col-first
+                    h2 FOOTER
+                    p Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                    p Powered by 
+                        a(href="#") Marko
+                .ft-col-second
+                    h2 BLOG POSTS
+                    .mini-contain
+                        img(src="img/lorem.jpg", alt="ft")
+                        h4 Lorem
+                        span  Sed matis nunc
+                    br
+                    hr
+                    .mini-contain
+                        img(src="img/ipsum.jpg", alt="fr")
+                        h4 Ipsum
+                        span  Praes tinci sed
+                .ft-col-third
+                        h2 POPULAR TAGS
+                        p.active Website
+                        +tags('Cook')
+                        +tags('Kitchen')
+                        +tags('Spoun')
+                        +tags('Travel')
+                        +tags('Work')
+                        +tags('Teach')
+                        +tags('Milk')
+                        +tags('Blog')
+                        +tags('Social')
+                        +tags('Milk')
+                        +tags('Jogurt')
+                        +tags('Other')
+            script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+            script.
+                $('.expand').click(function(){
+                    $('.myNav').addClass('showSide');
+                });
+                $('.deactivate').click(function(){
+                    $('.myNav').removeClass('showSide');
+                });
+                                

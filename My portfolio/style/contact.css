@@ -1,0 +1,40 @@
+/* line 1, C:/Users/Admin/Desktop/My portfolio/style/contact.scss */
+.contact {
+  background: #848484;
+  color: white;
+  padding: 15px; }
+  /* line 7, C:/Users/Admin/Desktop/My portfolio/style/contact.scss */
+  .contact ul {
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+    background: #454545; }
+    /* line 14, C:/Users/Admin/Desktop/My portfolio/style/contact.scss */
+    .contact ul li {
+      flex: 1;
+      padding: 20px; }
+      /* line 17, C:/Users/Admin/Desktop/My portfolio/style/contact.scss */
+      .contact ul li.green {
+        background: rgba(1, 155, 114, 0.9); }
+      /* line 22, C:/Users/Admin/Desktop/My portfolio/style/contact.scss */
+      .contact ul li i {
+        font-size: 3em;
+        display: block; }
+        /* line 25, C:/Users/Admin/Desktop/My portfolio/style/contact.scss */
+        .contact ul li i p {
+          font-size: 20px; }
+  /* line 33, C:/Users/Admin/Desktop/My portfolio/style/contact.scss */
+  .contact input {
+    padding: 20px;
+    margin-bottom: 20px; }
+  /* line 37, C:/Users/Admin/Desktop/My portfolio/style/contact.scss */
+  .contact button {
+    background: #2f2f2f;
+    padding: 15px;
+    border: none; }
+    /* line 41, C:/Users/Admin/Desktop/My portfolio/style/contact.scss */
+    .contact button:hover {
+      background: rgba(0, 0, 0, 0.79); }
+
+/*# sourceMappingURL=contact.css.map */

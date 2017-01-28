@@ -1,0 +1,142 @@
+$myClr:rgb(93, 93, 93)
+@import "mixSas.sass"
+@import "mediaSc.sass"
+
+#wrapper
+    max-width: 90%
+    margin: 0 auto
+    height: 100%
+
+header
+    display: flex
+    justify-content: space-between
+    height: 80px
+    align-items: center
+    z-index: 1
+    background: white
+    position: fixed
+    top: 0
+    width: 90%
+    h2
+        color: $myClr
+hr
+    border: none
+    border-top: 1px solid silver
+    width: 90%
+
+.expand
+    width: 40px
+    background: transparent
+    border:none
+    &:hover
+        cursor: pointer
+        .bar
+            background-color: darkgrey
+
+.bar
+    display: block
+    width: 80%
+    background-color: black
+    height: 2px
+    margin: 3px auto 5px auto
+
+.mail img
+    width: 50px
+.flex-row
+    display: flex
+    justify-content: space-between
+    &:first-child
+        margin-top: 130px
+.col
+    width: 23%
+    text-align: center
+
+    h2
+        color: rgba(54, 54, 54, 0.85)
+.col
+    overflow: hidden
+    position: relative
+    &:hover .showAdd
+        opacity: .8
+    &:hover img
+        transform: scale(1.1)
+
+    img
+        width: 100%
+        cursor: pointer
+        min-height: 180px
+        transition: all 0.5s ease 0s
+    p
+        text-align-last:  center
+        color: rgba(41, 41, 41, .9)
+
+aside
+    text-align: center
+    .marg
+        margin-top: 50px
+        margin-bottom: 50px
+    ul
+        padding: 0
+        margin: 0
+    li
+        display: inline-block
+        @extend .marg
+        &.active
+            background: black
+            color: white
+        a
+            text-decoration: none
+            color: black
+            padding: 15px
+            transition: all 0.2s linear 0s
+        a.first, a:hover
+            color: white
+            background: black
+
+article
+    @extend .marg
+    text-align: center
+    color: $myClr
+
+    img
+        max-width: 100%
+
+%foot-add
+    font-family: monospace, sans-serif
+    color: rgba(55, 55, 55, 0.89)
+
+footer
+    @extend  %dodatno
+    display: flex
+    padding-bottom: 50px
+    @extend %foot-add
+.ft-col-first
+    flex-basis: 33%
+.ft-col-second
+    flex-basis: 33%
+
+    img
+        width: 12%
+        float: left
+        margin-right: 15px
+        cursor: pointer
+        opacity: .7
+        transition: all 0.3s ease 0s
+        &:hover
+            opacity: 1
+    h4
+        margin-bottom: 5px
+.ft-col-third
+    flex-basis: 33%
+
+    p
+        color: white
+        background: rgb(107, 107, 107)
+        margin: 5px
+        padding: 5px
+        text-align: center
+        display: inline-block
+        cursor: pointer
+        transition: background 0.3s ease-out 0s
+        &.active, &:hover
+            background: black

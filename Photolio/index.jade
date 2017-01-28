@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(charset='utf-8')
+		meta(name='description', content='Pholio web site for practice')
+		meta(name='keywords', content='Jade, sass, learning, photos, other')
+		meta(name='author', content='Marko')
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+		title Photolio website
+		link(rel="stylesheet", href="style/myStyle.css")
+		<!-- Jquery -->
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+		script(src='script/myScript.js')
+
+	body
+		#wrapper
+			header.clearfix
+				button.toggle 
+					span.bar
+					span.bar
+					span.bar
+				h1 PHOTOLIO
+				p A template made by w3.css for photographers
+				button.grid Toggle Grid Padding
+				include menu
+
+			main.clearfix
+				-for(var i = 1; i<19; i++){
+					<img src="images/#{i}.jpg" alt="img#{i}"/>
+				-}
+		//footer van wrapper-a
+		footer 
+			ul
+				li: a(href="#"): i.fa.fa-facebook-square
+				li: a(href="#"): i.fa.fa-twitter-square
+				li: a(href="#"): i.fa.fa-google-plus-square
+				li: a(href="#"): i.fa.fa-share-square
+				li: a(href="#"): i.fa.fa-steam-square
+			p Powered by 
+			a(href="#") w3s.css

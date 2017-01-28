@@ -1,0 +1,16 @@
+.sidebar 
+    img(src="img/7.jpg", alt="sideImg")
+    h3 PORTFOLIO
+    em Template coded by Marko
+    ul
+        li: a(href="#") PORTFOLIO
+        li: a(href="#") ABOUT
+        li: a(href="#") CONTACT
+        
+    ul.list-inline
+        li
+        li
+        li
+        li
+        li
+        

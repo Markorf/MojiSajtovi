@@ -1,0 +1,45 @@
+.contact {
+ background: #848484;
+    color: white;
+    padding: 15px;
+    
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin-top: 30px;
+            text-align: center;
+            background: #454545;
+    
+        li {
+               flex: 1;
+                padding: 20px;
+            &.green {
+                background: rgba(1, 155, 114, 0.9);
+                
+            }
+                            
+            i {
+             font-size: 3em;
+             display: block;
+                p {
+                    font-size: 20px;
+                    
+                }
+            }
+        }
+    }
+    
+    input {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    button {
+        background: #2f2f2f;
+        padding: 15px;
+        border: none;
+        &:hover {
+            background: rgba(0, 0, 0, 0.79);
+        }
+    }
+}

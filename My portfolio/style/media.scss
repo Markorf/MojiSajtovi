@@ -1,0 +1,16 @@
+@media screen and (max-width:750px){
+    #wrapper {
+        //overflow: scroll;
+    }
+    .col-xs-4 {
+        width: 100%;
+    }
+    footer img {
+        width: 9% !important;
+    }
+}
+@media screen and (max-width: 500px){
+    body {
+        width: 480px;
+    }
+}

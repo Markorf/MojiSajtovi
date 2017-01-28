@@ -1,0 +1,14 @@
+@media screen and (max-width: 750px) {
+  /* line 5, C:/Users/Admin/Desktop/My portfolio/style/media.scss */
+  .col-xs-4 {
+    width: 100%; }
+  /* line 8, C:/Users/Admin/Desktop/My portfolio/style/media.scss */
+  footer img {
+    width: 9% !important; } }
+
+@media screen and (max-width: 500px) {
+  /* line 13, C:/Users/Admin/Desktop/My portfolio/style/media.scss */
+  body {
+    width: 480px; } }
+
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,10 @@
+@media screen and (max-width: 700px){
+	main{
+		flex-wrap: initial !important;
+		height: auto !important;
+
+		img {
+			width: 100% !important;
+		}
+	}		
+}

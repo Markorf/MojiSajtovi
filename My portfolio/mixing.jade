@@ -1,0 +1,15 @@
+mixin panel(heading, price, btn)
+    .col-xs-4
+        .panel.panel-default
+            .panel-heading
+                h4.panel-title #{heading}
+            .panel-body
+                ul.list-group
+                    li.list-group-item Web Design
+                    li.list-group-item Photography
+                    li.list-group-item 1 GB Storage
+                    li.list-group-item Mail Support
+                    li.list-group-item.big #{price}
+                        p.text-muted Per month
+            .panel-footer
+                button.btn.btn-primary #{btn}

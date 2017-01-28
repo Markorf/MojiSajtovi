@@ -1,0 +1,203 @@
+@import "contact.scss";
+@import "footer.scss";
+@import "sidebar.scss";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.5s linear 0s;
+}
+
+$main-clr:darken(darkgrey,30%);
+
+body {
+        background: #eee;
+}
+#wrapper {
+    padding: 15px;
+    max-width: 95%;
+    margin: 0 auto;
+  
+}
+header{
+    margin-top: 10px;
+      .logo:hover {
+            opacity: 0.8 !important;
+        }
+    i.fa.fa-bars {
+        font-size: 3em;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &:hover {
+            color: lighten(black, 40%);
+        }
+    }
+    ul {
+        margin-top: 30px;
+        display: inline-flex;
+        list-style-type:none;
+        margin-left: 15px;
+        width: 20%;
+        cursor: pointer;
+        li {
+            background: white;
+            padding: 10px;
+            flex: 1;
+            margin-right: 10px;
+            &:hover {
+                box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.37);
+            }
+            &.active {
+                background: black;
+                color: white;
+                min-width: 80px;
+                text-align: center;
+            }
+            i.fa {
+                font-size: 1.3em;
+            }
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
+    hr {
+        border: 2px solid grey;
+    }
+    
+} // end of header
+
+.twoImgContainer {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.col-xs-4 {
+    width: 30%;
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    img {
+        cursor: pointer;
+        width: 100%;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+} // end of main
+
+aside {
+    margin-top: 50px;
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 0 auto;
+        width: 25%;
+        height: 30px;
+        align-items: center;
+        li {
+            text-align: center;
+            flex: 1;
+            padding: 7px;
+            cursor: pointer;
+            margin-right: 15px;
+            &.active {
+                padding: 7px;
+                background: black;
+                color: white;
+               
+            } &:hover:not(.active){
+                background: black;
+                color: white;
+            }
+        }
+    }
+} // end of aside
+
+article {
+margin-bottom: 60px;
+.twoImgContainer {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    img {
+        width: 48%;
+        margin-right: 10px;
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+  }
+    .progress-bar {
+        background:$main-clr ;
+        color: white;
+        font-weight: bold;
+    }
+    .btn.btn-primary {
+        margin-top: 20px;
+        background: $main-clr;
+        padding:15px;
+        border: none;
+        &:hover {
+            background: #3c3c3c;
+        }
+    }
+}  // end of aricle
+
+section {
+    .col-xs-4 {
+        margin-top: 20px;
+        padding: 0;
+        
+    }
+    .panel.panel-default {
+        opacity: 0.8;
+        transform: opacity 0.35 linear 0s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .panel-heading {
+        padding: 50px;
+        background-color: darken($main-clr, 20%) !important;
+        color: white !important;
+        text-align: center;
+       
+        h4 {
+            font-size: 1.4em;
+        }  
+    }
+
+ 
+    .panel-body ul {
+      text-align: center;
+    }
+    .panel-body li {
+        border-top:1px solid transparent;
+        border-left:1px solid transparent;
+        border-right:1px solid transparent;
+        border-bottom: 2px solid silver;
+        color: #5f5e5e;
+        &.big {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+    }
+    .panel-footer {
+        text-align: center;
+        background: #d6d6d6;
+        padding: 15px;
+        border: none;
+        button {
+            background: $main-clr;
+            &:hover {
+                background: darken($main-clr, 20%);
+            }
+        }
+    }
+} // end of pricing section
+
+@import "media.scss";
+    

@@ -1,0 +1,212 @@
+.menu {
+  background: black;
+  position: fixed;
+  height: 0%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: height 0.3s ease-out 0s;
+  overflow: hidden;
+}
+
+.menu ul {
+  list-style: none;
+  margin-top: 200px;
+}
+
+.menu ul li {
+  padding: 15px;
+}
+
+.menu ul li a {
+  color: darkgrey;
+  font-family: monospace, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+.menu ul li a:hover {
+  color: white;
+}
+
+.menu a.close {
+  text-decoration: none;
+  color: darkgrey;
+  float: right;
+  padding: 20px;
+  transform: translate(-10px, 30px);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.menu a.close:hover {
+  color: white;
+  background: grey;
+}
+
+.menu-tog {
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    flex-wrap: initial !important;
+    height: auto !important;
+  }
+  main img {
+    width: 100% !important;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-top: 60px;
+}
+
+header button.toggle {
+  border: none;
+  position: relative;
+  margin-top: -15px;
+  height: 30px;
+  width: 40px;
+  padding: 10px;
+  float: right;
+  cursor: pointer;
+  background: none;
+}
+
+header button.toggle:hover span.bar {
+  background: gray;
+}
+
+header button.toggle span.bar {
+  position: absolute;
+  height: 5px;
+  left: 6px;
+  border-radius: 3px;
+  width: 70%;
+  background: #666666;
+  display: block;
+  transition: background 0.4s ease-out 0s;
+}
+
+header button.toggle span.bar:first-child {
+  top: 5px;
+}
+
+header button.toggle span.bar:last-child {
+  bottom: 0px;
+}
+
+header h1 {
+  color: #666666;
+  margin-top: 40px;
+  font-size: 2.3em;
+  margin-bottom: 20px;
+}
+
+header p {
+  color: #666666;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-top: -10px;
+  font-size: 1.2em;
+}
+
+header button.grid {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background: #666666;
+  font-size: 1em;
+  margin-top: 30px;
+  color: white;
+  font-weight: bold;
+  transition: box-shadow 0.2s linear 0s;
+}
+
+header button.grid:hover {
+  box-shadow: 0 4px 7px 0 #999999;
+}
+
+main {
+  margin-top: 50px;
+  height: 152vw;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+main img {
+  width: 33.3%;
+  cursor: pointer;
+  flex: 1;
+  padding: 0;
+  transition: all 0.5s ease-in 0s;
+}
+
+main img:hover {
+  opacity: 0.8;
+}
+
+.tg-pad img {
+  padding: 10px;
+  padding-top: 0;
+}
+
+footer {
+  background: #eee;
+  margin-top: 100px;
+  text-align: center;
+  padding: 100px;
+}
+
+footer p, footer a {
+  display: inline;
+  color: #666666;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  max-width: 20%;
+}
+
+footer ul li {
+  flex: 1;
+}
+
+footer ul li i.fa {
+  font-size: 1.7em;
+  color: black;
+  padding: 5px;
+  margin-bottom: 10px;
+  transition: opacity 0.5s ease 0s;
+}
+
+footer ul li:hover {
+  opacity: 0.8;
+}

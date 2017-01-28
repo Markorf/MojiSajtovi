@@ -1,0 +1,53 @@
+/* line 1, C:/Users/Admin/Desktop/My portfolio/style/sidebar.scss */
+.sidebar {
+  width: 33%;
+  border-right: 1px solid silver;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  transform: translateX(-100%);
+  height: 100%;
+  z-index: 1;
+  padding: 30px;
+  overflow: hidden;
+  background: white; }
+  /* line 15, C:/Users/Admin/Desktop/My portfolio/style/sidebar.scss */
+  .sidebar img {
+    width: 50%;
+    margin-bottom: 20px; }
+  /* line 19, C:/Users/Admin/Desktop/My portfolio/style/sidebar.scss */
+  .sidebar ul {
+    margin-top: 20px;
+    list-style: none; }
+    /* line 22, C:/Users/Admin/Desktop/My portfolio/style/sidebar.scss */
+    .sidebar ul li {
+      font-family: fantasy, sans-serif;
+      font-size: 1.5em;
+      margin: 10px;
+      display: block;
+      padding: 5px; }
+      /* line 28, C:/Users/Admin/Desktop/My portfolio/style/sidebar.scss */
+      .sidebar ul li:hover {
+        background: rgba(128, 128, 128, 0.64); }
+  /* line 34, C:/Users/Admin/Desktop/My portfolio/style/sidebar.scss */
+  .sidebar .fa.fa-times {
+    float: right;
+    font-size: 2.5em;
+    padding: 15px; }
+    /* line 38, C:/Users/Admin/Desktop/My portfolio/style/sidebar.scss */
+    .sidebar .fa.fa-times:hover {
+      background: black;
+      color: white; }
+  /* line 43, C:/Users/Admin/Desktop/My portfolio/style/sidebar.scss */
+  .sidebar ul.list-inline li {
+    float: left;
+    font-size: 1.2em; }
+    /* line 46, C:/Users/Admin/Desktop/My portfolio/style/sidebar.scss */
+    .sidebar ul.list-inline li:hover {
+      opacity: 0.8; }
+
+/* line 52, C:/Users/Admin/Desktop/My portfolio/style/sidebar.scss */
+.showSide {
+  transform: translateX(0); }
+
+/*# sourceMappingURL=sidebar.css.map */
