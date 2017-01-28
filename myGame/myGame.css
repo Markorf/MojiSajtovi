@@ -1,0 +1,90 @@
+
+body {
+    background-image: url(space.png);
+    cursor: pointer;
+    
+}
+
+#divID {
+  
+    width: 130px;
+    height: 130px;
+    border-radius: 60px;
+    position: relative;
+    top: 200px;
+    left: 500px;
+    color: white;
+    transition: top 1.2s, left 1.1s;
+    z-index: 1;
+  
+}
+
+
+
+
+#lopticaID {
+    position: relative;
+    top:7px;
+}
+
+.h2class {
+    position: relative;
+    top: -130px;
+    right: -50px;
+     color: white; 
+    font-size: 270%;
+   
+}
+
+
+
+#stopwatch {
+    position: relative;
+    left: 1440px;
+    top: -100px;
+}
+
+#h3iD {
+    position: relative;
+    top: -228px;
+    left: 1522px;
+    color: red;
+    font-size: 210%;
+    
+    
+}
+
+.heartC {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+ 
+}
+
+
+#btnid {
+    background-color: green;
+    height: 100px;
+    width: 300px;
+    color: white;
+    font-size: 150%;
+    border-radius: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 680px;
+    left: 670px;
+}
+#btnid:hover{
+    background-color: lawngreen;
+    
+}
+
+h2, div, body, .heartC, #stopwatch {
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}

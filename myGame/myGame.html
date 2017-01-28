@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Uhvati lopticu</title>
+    <script>
+        
+    </script>
+        <link rel="stylesheet" type="text/css" href="myGame.css">
+    </head>
+<body>
+
+<img src="start.png" height="950px" width="100%" id="startID">
+    <button id="btnid" onclick="full()">START</button> 
+    
+    
+  <div id="divID">
+      
+      <img src="loptica.png" width="123px" height="123px" id="lopticaID">
+        <h2 id="h2iD" class="h2class">0</h2>
+
+    </div>
+
+    <div timer>
+        <img src="stopwatchz.png" id="stopwatch" height="150px" width="180px">
+        <h3 id="h3iD"></h3>
+    </div>
+    
+    <img src="heart1.png" class="heartC">
+    <img src="heart2.png" class="heartC">
+    <img src="heart3.png" class="heartC">
+
+    <audio src='NlD.mp3' id="myAudio"></audio>
+       
+<script>
+    
+function full(){
+    
+    
+   /// def 
+ 
+var start = document.getElementById('startID');
+var lpt = document.getElementById('lopticaID');    
+    
+var lopta = document.getElementById('divID');
+var broj = document.getElementById('h2iD');
+var timer = document.getElementById('h3iD');
+var dugme = document.getElementById('btnid');    
+    
+    
+var srce = document.getElementsByClassName('heartC')
+    
+// delete
+
+  start.parentNode.removeChild(start); 
+dugme.parentNode.removeChild(dugme); 
+
+var muzika = document.getElementById('myAudio').play();
+
+    
+        // disable drag
+
+    document.getElementById('divID').ondragstart = function() { return false };
+    
+    // pomeranje loptice
+    
+    
+     var k=0;
+        
+    function pomeranje(){
+     
+    lopta.style.top = ` ${Math.floor(Math.random()*(850-10)+10 )}px `;
+     lopta.style.left = ` ${Math.floor(Math.random()*(1580-10)+10 )}px `;
+       
+    }
+       
+    setInterval(pomeranje, 500);
+    
+    // brojac
+    
+   lopta.addEventListener('click', count);
+    
+  
+    function count(){
+       
+        k=k+1;
+        h2iD.innerHTML = k;
+        if(k>9){
+            if(confirm('Presli ste igricu! \nZelite li ponovo?')!==true){
+                window.location.assign('http://www.clipartbest.com/cliparts/KTj/gRz/KTjgRz8Tq.svg');
+            }else{
+                window.location.reload();
+                
+                
+            }
+        }
+        
+    }
+    
+    /// stoperica
+    
+    for(var q=0; q<3; q++){
+      var p = 2;
+        var t = 15; 
+   function CountDown(){
+    
+var x = document.getElementById('h3iD').innerHTML = t;
+        if(t>9){
+            timer.style.left = '1514px';
+        } else timer.style.left = '1523px';
+        
+        t=t-1;
+        if(t<0){
+            k=0;
+            h2iD.innerHTML = k;
+            
+          srce[p].parentNode.removeChild(srce[p]);
+            p=p-1;
+            t=15;
+            pomeranje();
+            if(p<0){
+                alert('Izgubili ste!');
+                window.location.reload();
+            }
+        }
+        
+    }
+       
+    }
+    setInterval(CountDown, 1000);
+    
+    /// hearts
+    
+    srce[1].style.left='20px';
+    srce[2].style.left='65px';
+    
+    // promena boje na space
+    
+    addEventListener('keypress', function(event){
+        if(event.which ==32){
+            lpt.src = 'loptica2.png';
+        }
+        
+        
+    });
+  
+}
+    
+</script>
+
+    
+    
+</body>
+</html>
