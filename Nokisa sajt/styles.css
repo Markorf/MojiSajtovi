@@ -1,0 +1,141 @@
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+body {
+	position: relative;
+	font-family: 'PT Sans', sans-serif;
+	overflow-x: hidden;
+}
+.navbar{
+	border: 0;
+}
+.navbar.navbar-default {
+	background: #64C7E8;
+}
+.navbar-header .navbar-brand  {
+   position: absolute;
+   left: 250px;
+}
+.navbar-header .navbar-brand:hover {
+	color: #fff;
+}
+#mainUL  {
+   margin-right: 100px;
+}
+#mainUL li.active a {
+	background: white;
+	color: #64C7E8;
+}
+#mainUL li a, .navbar-header .navbar-brand, .nav.navbar-nav li a {
+	color:white;
+	font-weight: bold;
+	font-size: 16.5px;
+	letter-spacing: 3px;
+	padding-top:14px;
+}
+#mainUL li a:hover, .nav.navbar-nav li a:hover {
+	color: #64C7E8;
+	background: white; 
+}
+.jumbotron {
+	background: #64C7E8;
+	height: 500px;
+	padding-top: 150px;
+	color: white;
+}
+.jumbotron h1 {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.jumbotron h4 {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+#about h1,h2,button {
+	margin-left: 20px;
+}
+#about p {
+	font-size: 1.2em;
+	color: grey;
+	margin-left: 20px;
+}
+#myLogo{
+	height: 200px;
+	width: 500px;
+	margin-top: 40px;
+}
+.slideanim {
+	visibility: hidden;
+}
+.slide {
+	animation: slide 1s;
+	visibility: visible;
+}
+@keyframes slide {
+	0%{
+		opacity: 0;
+		transform: translateY(70%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+.bg-grey {
+	background: #E3E7E8;
+	padding-top:60px;
+	padding-bottom:50px;
+}
+#sign {
+	margin:55px 30px;
+}
+#features {padding: 50px 0px;}
+.small-sp {
+	font-size: 50px;
+	color: #64C7E8;
+}
+#support {
+	font-family: arial, sans-serif;
+	padding-bottom: 0;
+}
+#support h2 {
+	margin-bottom: 40px;
+}
+.carousel-inner .item {
+	height: 500px;
+}
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+	height: 500px;
+	margin: auto;
+	width: 100%;
+	filter: grayscale(100%);
+}
+.carousel-inner>.item>.carousel-caption {
+	color: white;
+}
+.carousel-control{
+	color: #64C7E8;
+}
+.firstP {
+	height: 300px;
+	width: 150px;
+}
+.panel-body img:not(.firstP){
+  height: 300px;
+  width: 250px;
+}
+.primary, .btn-primary, .panel-heading {
+	background-color: #64C7E8;
+}
+.panel-heading {
+	font-size: 15px;
+	font-weight: bold;
+}
+footer {
+	height: 150px;
+}
+footer a {
+	position: relative;
+	top:20px;
+	color: #64C7E8;
+	font-size: 50px;
+}
