@@ -1,0 +1,73 @@
+doctype html
+html(lang="en")
+    head 
+        meta(charset="utf-8")
+        meta(name="viewport", content="width:device-width, initial-scale=1") 
+        title Architect
+        link(rel="stylesheet", href="myStyle.css") 
+    body
+        #wrapper
+            header
+                .left-side
+                    a(href="#", role='main')
+                        strong BR
+                        |  Architects
+                ul.right-side
+                    li: a(href="#projects") Projects
+                    li: a(href="#about") About
+                    li: a(href="#contact") Contact
+            .container
+                main
+                    h3 
+                        span BR
+                        | Architects
+                .projects#projects
+                    h3  Projects
+                    br
+                    hr
+                    img-container 
+                        -var houses = ['Summer House', 'Brick House', 'Renovated', 'Barn House'];
+                            -for(i=2; i<6; i++) {
+                                .myDiv
+                                    img(src='img/house#{i}.jpg')
+                                    .additional #{houses[i-2]}
+                                -}
+                            -for(j=5; j>1; j--) {
+                                .myDiv
+                                    img(src='img/house#{j}.jpg')
+                                    .additional #{houses[j-2]}
+                                -}
+                
+                .about#about
+                    h3 About
+                    hr
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .content-container
+            
+                        include included
+                        +myMixin('1', 'Jane Doe', 'CEO & Founder')
+                        +myMixin('2', 'John Doe', 'Dark Shadow')
+                        +myMixin('3', 'Mike Ross', 'Funny Man')
+                        +myMixin('4', 'Dan Star Doe', 'Seamless')
+                        
+                .contact#contact 
+                    h3 Contact
+                    br
+                    hr
+                    br
+                    p Lets get in touch and talk about your and our next project.
+                    form(action="mailto:someone@example.com", method='post', enctype='text/plain')
+                        input(type="text", placeholder ="Name")
+                        input(type="email", placeholder ="Email")
+                        input(type="text", placeholder ="Subject")
+                        input(type="text", placeholder ="Comment")
+                        button SEND MESSAGE 
+                #googleMap(style='width:100%; height:450px; border:1px solid silver; ')   
+                
+                script(src='https://maps.googleapis.com/maps/api/js')
+                script(src='script/myJs.js')
+            
+                footer 
+                    p Powered by 
+                        a(href="#", title='Editor of this website') Marko
