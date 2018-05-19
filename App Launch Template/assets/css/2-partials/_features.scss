@@ -1,0 +1,31 @@
+// features
+
+section.features {
+    background: darken(grey,10%);
+    color: white;
+
+    h1 {
+        font-size: 3.6rem;
+        font-weight: bold;
+    }
+    .flexb-row {
+        padding: 1rem;
+        display: flex;
+        text-align: center;
+        .inner {
+            flex: 1;
+            i {
+                font-size: 4rem;
+                margin-bottom: 1rem;
+            }
+            $icons:(bolt:yellow, heart:red, camera:gold, battery-full:green, diamond:white, cloud:lightblue, globe:yellow, hdd:cyan, user:white, shield:orange, wifi:grey, image:red);
+            
+            @each $key, $value in $icons {
+                .fa.fa-#{$key}{
+                    color: $value;
+                }
+            }
+        }
+    }
+    
+}

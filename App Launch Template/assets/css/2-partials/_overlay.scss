@@ -1,0 +1,28 @@
+.overlay {
+    background: rgba(16, 16, 16, 0.19);
+    position: fixed;
+    height: 100%;
+    width: 100%;   
+    top:0;
+    z-index: 20;
+    transition: all 0.5s ease-out 0s;
+    opacity: 0;
+    display: none;
+    .dial-box {
+        background: white;
+        width: 80%;
+        max-width: 900px;
+        margin: 10% auto;
+        padding: 2.5rem;
+        .dial-header {
+            display: flex;
+            h1 {flex: 1;}
+            a.close {
+                font-size: 3rem;
+                &:hover {color: black;}
+            }
+        }
+        .fa {margin-right: .5rem;}
+        .btn.btn-danger {width: 100%};
+    }
+}

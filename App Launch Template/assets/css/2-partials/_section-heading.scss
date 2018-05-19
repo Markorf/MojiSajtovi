@@ -1,0 +1,118 @@
+#headSection {
+    background: black;
+}
+section.main {
+      position: relative; // ne pravi razliku (valjda jer je gore) (pos absolute dole u div-u je bitan)
+      display: flex;
+      align-items: center; // w
+      transition: all 0.4s ease 0s;
+    
+    &.first {
+        
+    }
+    &.second {
+      display: none;  
+    }
+    &.third {
+        display: none;
+    }
+    
+    div {
+        background: rgba(0, 0, 0, 0.61);
+        padding: 1.5rem;
+        position: absolute; // w
+        text-align: center;
+        width: 30%;
+        margin-left: 1rem;
+        border-radius: 1rem;
+        transition: background 0.6s ease 0s;
+        &:hover {
+             background: rgba(0, 0, 0, 1);
+        }
+        hr {border-bottom: .5px solid white;}
+    
+    .btn.btn-green {
+        background: rgba(75, 247, 75, 0.4);
+        color: white;
+        padding: .5rem 1rem .5rem 1rem;
+        &:hover {
+            background: #ffffff;
+            color: black;
+        }
+        .fa {
+            margin-right: 3px;
+        }
+    }
+        &.two {
+            button{
+                &:hover {
+            background: #ffffff;
+            color: black;
+                }
+            .fa {
+                margin-right: 3px;
+            }
+                }
+        }
+        &.three {
+            .btn.btn-purple {
+                background: rgba(74, 60, 237, 0.79);
+                color: white;
+                &:hover {
+            background: #ffffff;
+            color: black;
+                }
+                .fa {
+                    margin-right: 3px;
+                }
+            }
+        }
+     
+  } // end of div
+    .btn-secondary {
+        position: absolute; // w
+        right: 1rem;
+        padding: .6rem;
+        border-radius: 4px;
+        border: none;
+        background: black;
+        color: white;
+        &:hover {
+            background: darken(white, 20%);
+            color: black;
+        }
+    }
+    
+    
+}
+
+@media screen and (max-width:576px){
+    section.main{
+        flex-direction: column;
+        .btn-secondary {
+            bottom: 0;
+            right: 0;
+            width: 100%;
+         }
+        div {
+            display: none;
+        }
+        .btn-green {
+            background: green;
+            color: white;
+            width: 100%;
+            border: none;
+            padding: .5rem;
+            transition: all .3s ease-in 0s;
+            &:hover {
+                background: #d6d6d6;
+                color: black;
+            }
+            .fa {
+                margin-right: .3rem;
+            }
+        }
+  
+  }
+
+}

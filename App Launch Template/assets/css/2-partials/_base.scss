@@ -1,0 +1,25 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//html {height: 100%; width: 100%;}
+body {
+    background: black;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#wrapper {
+    background: white;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+img {
+    height: auto;
+    display: inline-block;
+    max-width: 100%;
+    
+}

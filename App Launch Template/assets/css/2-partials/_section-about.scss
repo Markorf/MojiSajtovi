@@ -1,0 +1,41 @@
+// section about
+
+@mixin media($param){
+    @media screen and (max-width:$param){
+        @content;
+    }
+}
+
+section.about {
+    img {
+        //height: 450px;
+        float: right; 
+        width: 335px;
+        max-width: 100%;
+        @include media(700px){
+            float: none;
+        }
+    }
+    h1.display-4:not(.text-green) {
+        font-weight: bold;
+    }
+    h1.text-green {
+        color: green;
+        font-weight: 400;
+    }
+    strong {
+        font-size: 1.3rem;
+    }
+    button.btn:hover {
+        background: #a5a5a5;
+    }
+    p{
+        margin-right: 1rem;
+        .fa{
+            margin-right: .4rem;
+            font-size: 1.5rem;
+            &:first-of-type {color:green;}
+            &:last-of-type {color:#158bd4;}
+        }
+    }
+}
