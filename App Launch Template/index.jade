@@ -1,0 +1,189 @@
+doctype html
+html(lang='en')
+  head
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      meta(charset='utf-8')
+      meta(name='description', content='AppLaunchTemplate, website for practice')
+      meta(name='keywords', content='Jade, sass, learning, photos, other')
+      meta(name='author', content='Marko')
+      link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+      title App Launch Template
+      link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous")
+      link(rel="stylesheet", href="assets/css/main.css")
+  body
+      #wrapper
+          section.heading#headSection
+              section.main.first
+                  button.btn.btn-green.hidden-sm-up Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i> 
+                   
+                  div
+                      h3.text-white Take photos with <br> our app
+                      hr
+                      p.text-white Supper simple installment: <br> free for charge
+                      button.btn.btn-green Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i>
+
+                  img(src="assets/img/app.jpg", alt="main-1")  
+                  
+                  button.btn-secondary(onclick='addToCont(1)') Take Tour >
+                
+              section.main.second
+                  button.btn-green.hidden-sm-up Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i>   
+                  div.two
+                      h3.text-danger <strong>CLICK!</strong> Fast and <br> Easy
+                      hr
+                      p.text-white Choose from thousands <br> of features
+                      
+                      button.btn.btn-danger Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i>
+
+                  img(src="assets/img/app2.jpg", alt="main-1")  
+                  
+                  button.btn-secondary(onclick='addToCont(1)') Take Tour >
+                  
+              section.main.third
+                  button.btn-green.hidden-sm-up Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i> 
+                  div.three
+                      h3.text-white Smart design
+                      hr
+                      p.text-white Customize photos as you <br> go                      
+                      button.btn.btn-purple Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i>
+
+                  img(src="assets/img/app4.jpg", alt="main-1")  
+                  
+                  button.btn-secondary(onclick='addToCont(1)') Take Tour >
+                  
+          .overlay
+              .dial-box
+                  .dial-header
+                      h1 DOWNLOAD
+                      a(href="#").close &times;
+                  .dial-body
+                      p Download the app in AppStore, Google Play or Microsoft Store.
+                      p <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i>
+                      form
+                          input(type="text", placeholder='Enter e-mail', required='true').form-control
+                  .dial-footer.mt-3
+                    button#fakeBtn.btn.btn-danger Fake Download
+                
+      
+          section.about.my-5.p-4
+              .row
+                  .col-sm-7
+                      h1.display-4 The App
+                      h1.text-green.display-4 Why by it?
+                      p <strong>Take photos like a pro.</strong> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      button.btn <i class="fa fa-download" aria-hidden="true"></i> Download application
+                      
+                      p.mt-4 Avaliable for <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i>
+                  
+                  .col-sm-5
+                      img(src="assets/img/img_app.jpg", alt="right-img")
+          
+          article.text-center
+              .row
+                  .col-sm-6
+                      img(src="assets/img/app5.jpg", alt="left-img").hidden-xs-down
+                  .col-sm-6
+                      h1.display-3 Clarity
+                      h2.display-4 Pixels, who?
+                      p <strong>A revolution in resolution. </strong>Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  
+          section.features.p-5
+              h1.text-center Features
+              p.text-center This apps are form mobile phone
+              .flexb-row
+                .inner
+                  <i class="fa fa-bolt" aria-hidden="true"></i> 
+                  p Fast
+                .inner  
+                  <i class="fa fa-heart w3-text-red w3-jumbo"></i>
+                  p Loved
+                .inner  
+                  <i class="fa fa-camera w3-text-yellow w3-jumbo"></i>
+                  p Clarity
+                .inner  
+                  <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
+                  p Power
+              .flexb-row
+                .inner
+                  <i class="fa fa-diamond w3-text-white w3-jumbo"></i> 
+                  p Sharp
+                .inner  
+                  <i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
+                  p Cloud
+                .inner  
+                  <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
+                  p Global
+                .inner  
+                  <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
+                  p Storage
+              .flexb-row
+                .inner
+                  <i class="fa fa-user w3-text-sand w3-jumbo"></i>
+                  p Safe
+                .inner  
+                  <i class="fa fa-shield w3- text-orange w3-jumbo"></i>
+                  p Stabile
+                .inner  
+                  <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
+                  p Connected
+                .inner  
+                  <i class="fa fa-image w3-text-pink w3-jumbo"></i>
+                  p HD
+          
+          section.pricing.text-center
+              h1.display-3 Pricing
+              p.lead Choose a pricing plat that fits your needs:
+              
+              .row
+                  .col-sm-6
+                      .card.text-center
+                          .card-header.grey 
+                              h1.card-title Basic 
+                          ul.list-group
+                              li.list-group-item: p 250 Photos
+                              li.list-group-item: p 10 Features
+                              li.list-group-item: p No Ads
+                              li.list-group-item: p Office hours support
+                              li.list-group-item.padded: p $ 25
+                          .card-footer
+                            button.btn.btn-black Download <i class="fa fa-android" aria-hidden="true"></i>
+                            
+                  .col-sm-6
+                      .card.text-center
+                          .card-header.orange 
+                              h1.card-title Premiun 
+                          ul.list-group
+                              li.list-group-item: p 1000 Photos
+                              li.list-group-item: p 50 Features
+                              li.list-group-item: p No Ads
+                              li.list-group-item: p Endless support
+                              li.list-group-item.padded: p $ 100
+                          .card-footer
+                            button.btn.btn-black Download <i class="fa fa-android" aria-hidden="true"></i>
+                      
+          footer.mt-5.p-5
+              .fx-row
+                  <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+                  <i class="fa fa-instagram w3-hover-text-purple"></i>
+                  <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+                  <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+                  <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+                  <i class="fa fa-linkedin w3-hover-text-indigo"></i>    
+              p.mt-3 Powered by 
+                  a(href="#") Marko
+                      
+
+                  
+                  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      script(src='assets/js/main.js')
+    

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="AppLaunchTemplate, website for practice">
+    <meta name="keywords" content="Jade, sass, learning, photos, other">
+    <meta name="author" content="Marko">
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>App Launch Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <section class="heading" id="headSection">
+        <section class="main first">
+          <button class="btn btn-green hidden-sm-up">Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i> </button>
+          <div>
+            <h3 class="text-white">Take photos with <br> our app</h3>
+            <hr>
+            <p class="text-white">Supper simple installment: <br> free for charge</p>
+            <button class="btn btn-green">Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i></button>
+          </div><img src="assets/img/app.jpg" alt="main-1">
+          <button class="btn-secondary" onclick="addToCont(1)">Take Tour ></button>
+        </section>
+        <section class="main second">
+          <button class="btn btn-green hidden-sm-up">Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i>   </button>
+          <div class="two">
+            <h3 class="text-danger"><strong>CLICK!</strong> Fast and <br> Easy</h3>
+            <hr>
+            <p class="text-white">Choose from thousands <br> of features</p>
+            <button class="btn btn-danger">Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i></button>
+          </div><img src="assets/img/app2.jpg" alt="main-1">
+          <button class="btn-secondary" onclick="addToCont(1)">Take Tour ></button>
+        </section>
+        <section class="main third">
+          <button class="btn btn-green hidden-sm-up">Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i> </button>
+          <div class="three">
+            <h3 class="text-white">Smart design</h3>
+            <hr>
+            <p class="text-white">Customize photos as you <br> go                      </p>
+            <button class="btn btn-purple">Download <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i></button>
+          </div><img src="assets/img/app4.jpg" alt="main-1">
+          <button class="btn-secondary" onclick="addToCont(1)">Take Tour ></button>
+        </section>
+      </section>
+      <div class="overlay">
+        <div class="dial-box">
+          <div class="dial-header">
+            <h1>DOWNLOAD</h1><a class="close" href="#">&times;</a>
+          </div>
+          <div class="dial-body">
+            <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
+            <p><i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i></p>
+            <form>
+              <input class="form-control" type="text" placeholder="Enter e-mail" required="true">
+            </form>
+          </div>
+          <div class="dial-footer mt-3">
+            <button class="btn btn-danger" id="fakeBtn">Fake Download</button>
+          </div>
+        </div>
+      </div>
+      <section class="about my-5 p-4">
+        <div class="row">
+          <div class="col-sm-7">
+            <h1 class="display-4">The App</h1>
+            <h1 class="text-green display-4">Why by it?</h1>
+            <p><strong>Take photos like a pro.</strong> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button class="btn"><i class="fa fa-download" aria-hidden="true"></i> Download application</button>
+            <p class="mt-4">Avaliable for <i class="fa fa-android" aria-hidden="true"></i><i class="fa fa-apple" aria-hidden="true"></i><i class="fa fa-windows" aria-hidden="true"></i></p>
+          </div>
+          <div class="col-sm-5"><img src="assets/img/img_app.jpg" alt="right-img"></div>
+        </div>
+      </section>
+      <article class="text-center">
+        <div class="row">
+          <div class="col-sm-6"><img class="hidden-xs-down" src="assets/img/app5.jpg" alt="left-img"></div>
+          <div class="col-sm-6">
+            <h1 class="display-3">Clarity</h1>
+            <h2 class="display-4">Pixels, who?</h2>
+            <p><strong>A revolution in resolution. </strong>Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </div>
+      </article>
+      <section class="features p-5">
+        <h1 class="text-center">Features</h1>
+        <p class="text-center">This apps are form mobile phone</p>
+        <div class="flexb-row">
+          <div class="inner"><i class="fa fa-bolt" aria-hidden="true"></i> 
+            <p>Fast</p>
+          </div>
+          <div class="inner">
+             <i class="fa fa-heart w3-text-red w3-jumbo"></i>
+            <p>Loved</p>
+          </div>
+          <div class="inner">
+             <i class="fa fa-camera w3-text-yellow w3-jumbo"></i>
+            <p>Clarity</p>
+          </div>
+          <div class="inner">
+             <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
+            <p>Power</p>
+          </div>
+        </div>
+        <div class="flexb-row">
+          <div class="inner"><i class="fa fa-diamond w3-text-white w3-jumbo"></i> 
+            <p>Sharp</p>
+          </div>
+          <div class="inner">
+             <i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
+            <p>Cloud</p>
+          </div>
+          <div class="inner">
+             <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
+            <p>Global</p>
+          </div>
+          <div class="inner">
+             <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
+            <p>Storage</p>
+          </div>
+        </div>
+        <div class="flexb-row">
+          <div class="inner"><i class="fa fa-user w3-text-sand w3-jumbo"></i>
+            <p>Safe</p>
+          </div>
+          <div class="inner">
+             <i class="fa fa-shield w3- text-orange w3-jumbo"></i>
+            <p>Stabile</p>
+          </div>
+          <div class="inner">
+             <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
+            <p>Connected</p>
+          </div>
+          <div class="inner">
+             <i class="fa fa-image w3-text-pink w3-jumbo"></i>
+            <p>HD</p>
+          </div>
+        </div>
+      </section>
+      <section class="pricing text-center">
+        <h1 class="display-3">Pricing</h1>
+        <p class="lead">Choose a pricing plat that fits your needs:</p>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card text-center">
+              <div class="card-header grey"> 
+                <h1 class="card-title">Basic </h1>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <p>250 Photos</p>
+                </li>
+                <li class="list-group-item">
+                  <p>10 Features</p>
+                </li>
+                <li class="list-group-item">
+                  <p>No Ads</p>
+                </li>
+                <li class="list-group-item">
+                  <p>Office hours support</p>
+                </li>
+                <li class="list-group-item padded">
+                  <p>$ 25</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <button class="btn btn-black">Download <i class="fa fa-android" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card text-center">
+              <div class="card-header orange"> 
+                <h1 class="card-title">Premiun </h1>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <p>1000 Photos</p>
+                </li>
+                <li class="list-group-item">
+                  <p>50 Features</p>
+                </li>
+                <li class="list-group-item">
+                  <p>No Ads</p>
+                </li>
+                <li class="list-group-item">
+                  <p>Endless support</p>
+                </li>
+                <li class="list-group-item padded">
+                  <p>$ 100</p>
+                </li>
+              </ul>
+              <div class="card-footer">
+                <button class="btn btn-black">Download <i class="fa fa-android" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="mt-5 p-5">
+        <div class="fx-row"><i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+<i class="fa fa-instagram w3-hover-text-purple"></i>
+<i class="fa fa-snapchat w3-hover-text-yellow"></i>
+<i class="fa fa-pinterest-p w3-hover-text-red"></i>
+<i class="fa fa-twitter w3-hover-text-light-blue"></i>
+<i class="fa fa-linkedin w3-hover-text-indigo"></i>    
+        </div>
+        <p class="mt-3">Powered by <a href="#">Marko</a></p>
+      </footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
