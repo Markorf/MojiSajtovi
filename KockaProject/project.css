@@ -1,0 +1,74 @@
+     body{background: #eee; background: url(http://www.10wallpaper.com/wallpaper/medium/1112/cubes_3d-Creative_Design_Desktop_Wallpaper_medium.jpg) no-repeat;
+    background-size: 100% 1000px;
+        
+}
+
+    .viewport{
+        perspective: 1000px;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -100px 0 0 -100px;
+    }        
+    .cube {
+        transform: rotateX(-15deg) rotateY(270deg);
+        transform-style: preserve-3d;
+        height: inherit;
+        width: inherit;
+        transition: all 0.7s linear 0s;
+    }
+    .cube > div {
+        position: absolute;
+        border: 1px solid black;
+        //opacity: 0.7;
+        height: 300px;
+        width: 300px;
+    
+    }
+    .front {
+        background: red;
+        transform: translateZ(150px);
+    } .back {
+        background: #9f9f9f;
+        transform: translateZ(-150px) rotateX(0deg) rotateY(180deg);
+    }
+    .left {
+        background: lightblue;
+        transform: translateX(-150px) rotateY(-90deg);
+    }
+     .right {
+        background: lightblue;
+        transform: translateX(150px) rotateY(90deg);
+    }
+    .top {
+        background: lightgreen;
+        transform: translateY(-150px) rotateX(90deg);
+    }
+    .bottom {
+        background: lightgreen;
+        transform: translateY(150px) rotateX(-90deg);
+    }
+    /*  ... */
+    ul{
+        list-style-type: none; 
+        text-align: center;
+        padding: 0;
+        margin: 0;}
+    ul li:first-child{margin-top: 15px;}
+    ul li{
+        padding: 15px;
+    }
+    ul li:hover {background: yellow;}
+    ul li a{
+        text-decoration: none;
+        color: #c6631a;
+        font-weight: bold;
+        font-family: Arial black, sans-serif;
+    }
+.form-control{
+    width: 90%;
+    margin: 0 auto;
+}
+label{margin-left: 20px;}
