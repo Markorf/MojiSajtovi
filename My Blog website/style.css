@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre|Raleway');
+
+body {background: #eee; margin: 0; padding: 0; overflow-x: hidden; font-family: 'Proza Libre', sans-serif;}
+.myJumbotron {
+    height: 200px;
+    text-align: center;
+    margin-top: 40px;
+}
+.myJumbotron h1 {
+    margin-bottom: 20px;
+}
+img {
+    transition: all 0.4s ease-in 0s;
+    position: relative;
+}
+img:hover {
+    transform: scale(1.05);
+    filter: grayscale(50%);
+}
+
+
+.container {
+    margin-top: -30px;
+}
+span.label {
+    background: black;
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+}
+span.cmnt {
+    background: black;
+    color: white;
+    padding: 7px;    
+    display: inline-block;
+    margin-right: 30px;
+}
+.thumbnail {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.39);
+    margin-bottom: 60px;
+    margin-top: -25px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+
+ 
+}
+.panel-body {
+    border-bottom: 1px solid silver;
+    transform: all 0.4s ease 0s;
+    cursor: pointer;
+
+}
+#firstPanel:hover {
+    background: #d8d8d8;
+}
+.mw {
+    display: inline-block;
+    padding: 3px 8px 3px 8px;
+    background: #eee;
+    margin:5px;
+}
+.mw.active {
+    background: black;
+    color: white;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+footer {
+    background: #656565;
+    color: white;
+    padding: 25px;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li {
+    float: left;
+    margin: 10px 10px 10px 0;
+    background: black;
+    color: white;
+    padding: 15px;
+}
+footer ul li:first-child{
+    background: #848484;
+    pointer-events: none;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+footer p {
+    margin: 5px 0 0 50px;
+    color: white;
+    font-weight: bold;
+}
+.myClass {
+    text-decoration: none !important;
+    color: white;
+    font-size: 1.2em;
+    font-style: oblique;
+}
+
+/*Additional content */
+
+.hiddenCont {
+
+    height: 56%;
+    position: absolute;
+    width: 100%;
+    background: #acacac;
+    opacity: 0;
+    top: 0;
+    transition: all 0.4s ease-out 0s;
+}
+
+.hiddenCont:hover  {
+    opacity: 0.8;
+}
+.hiddenCont ul {
+    margin-top: 80px;
+}

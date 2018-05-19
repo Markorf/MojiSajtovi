@@ -1,0 +1,67 @@
+doctype html
+html(lang='en')
+    head
+        title My blog website
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        link(rel="stylesheet", href="style.css")
+
+    body
+      .myJumbotron
+         h1 MY BLOG
+         p Welcome to the blog of
+          span.label  unknown
+      .container 
+       .row
+         .col-sm-8
+           include mixinInc
+           +blogs('img/woods.jpg', 'TITLE HEADING', '0')
+           +blogs('img/bridge.jpg', 'BLOG ENTRY', '2')
+        
+         .col-sm-4
+           .thumbnail
+             img.img-responsive(src="img/avatar_g.jpg", alt="somegirl")
+             +hiddenContent()
+
+             h3 Some name
+             p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem dignissimos nobis quos ipsum. Recusandae nam neque ullam, soluta ipsam rem consequuntur dolorem perferendis debitis reprehenderit! Voluptatum veritatis, eos aut!
+             
+           .panel.panel-default
+              .panel-heading
+                h4.panel-title Popular posts
+              +side('img/workshop.jpg', 'Lorem')
+              +side('img/gondol.jpg', 'Ipsum')
+              +side('img/skies.jpg', 'Dorum')
+              +side('img/rock.jpg', 'Amet')
+         .row
+           .col-md-4.col-sm-12
+            .panel.panel-default
+             .panel-heading
+               h4.panel-title Tags
+             .panel-body
+               .mw.active Active
+               +minWell('Random')
+               +minWell('Lorem')
+               +minWell('Ipsum')
+               +minWell('Dolor')
+               +minWell('Conquat')
+               +minWell('Unkn')
+               +minWell('Street')
+               +minWell('Facebook')
+               +minWell('Message')
+               +minWell('Alert')
+           
+      footer.row
+        .col-sm-12
+          ul
+            li 
+             a(href="#") Previous
+            li 
+              a(href="#") Next
+         p.hidden-xs Site coded by 
+          a.myClass(href="#") Marko
+                    
+         
+                    
+                  

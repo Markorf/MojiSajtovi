@@ -1,0 +1,36 @@
+mixin blogs(img, title, comment)
+    .thumbnail
+        img.img-responsive(src="#{img}", alt="wood")
+        h2 #{title}
+        p.desc Title description,
+        span.text-muted  April 7.2014.
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolore optio doloribus possimus repudiandae impedit quo doloremque fuga eius, quis. Architecto iusto suscipit porro, aliquid minus blanditiis eaque optio a!
+        button.btn.btn-default.btn-lg Read More
+        h5.pull-right Comments 
+         span.cmnt #{comment}
+         
+mixin side(image, tit)
+    .panel-body#firstPanel
+       .media
+         .media-left.media-middle
+            img.media-object(src="#{image}", alt="ws", width=50)
+         .media-body
+           h4.media-heading #{tit}
+           p Sed mantic punc
+           
+mixin minWell(text)
+   .mw #{text}
+      
+mixin hiddenContent()
+    .hiddenCont.text-center
+        h5.text-center Some additional content
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, temporibus consectetur neque aperiam eligendi tempore natus adipisci ut.
+        ul.list-inline
+          li
+            .glyphicon.glyphicon-info-sign 
+          li
+            .glyphicon.glyphicon-hand-up
+          li 
+            .glyphicon.glyphicon-blackboard
+          li
+            .glyphicon.glyphicon-registration-mark
