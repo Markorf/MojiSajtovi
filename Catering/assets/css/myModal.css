@@ -1,0 +1,52 @@
+.overlay{
+    background: black;
+    height: 100%;
+    width: 100%;
+    padding: 20%;
+    //font-size: 3em;
+    display: flex;
+    position: fixed;
+    opacity: 0.92;
+    z-index: 15;
+    //margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.pClass{
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    position: fixed;
+    right: 30px;
+    //padding: 15px;
+    top: 20px;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+.pClass:hover {
+    opacity: 0.5;
+}
+
+.contClass {
+
+    position: fixed;
+    padding: 30px;
+    height: 350px;
+    width: 550px;
+    background: white;
+    overflow: hidden;
+    opacity: 1;
+    font-size: 1.2em;
+    z-index: 16;
+}
+.hClass {
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+#myBTN {
+    float: right;
+}
+#myBTN:hover {
+    opacity: 0.9;
+}

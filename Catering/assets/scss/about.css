@@ -1,0 +1,36 @@
+/* line 1, C:/Users/Admin/Desktop/Catering/assets/scss/about.scss */
+main {
+  font-size: 1.2em;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 100px; }
+  /* line 6, C:/Users/Admin/Desktop/Catering/assets/scss/about.scss */
+  main h1 {
+    margin-bottom: 30px;
+    font-weight: 100; }
+  /* line 11, C:/Users/Admin/Desktop/Catering/assets/scss/about.scss */
+  main p.blue {
+    color: #4baac8; }
+  /* line 14, C:/Users/Admin/Desktop/Catering/assets/scss/about.scss */
+  main p {
+    margin-bottom: 15px; }
+
+/* line 18, C:/Users/Admin/Desktop/Catering/assets/scss/about.scss */
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.64); }
+
+/* line 26, C:/Users/Admin/Desktop/Catering/assets/scss/about.scss */
+button {
+  padding: 15px;
+  margin-top: 15px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border: none; }
+
+/*# sourceMappingURL=about.css.map */

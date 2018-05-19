@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+  head
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      meta(charset='utf-8')
+      meta(name='description', content='Catering website for practice')
+      meta(name='keywords', content='Jade, sass, learning, photos, other')
+      meta(name='author', content='Marko')
+      link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+      title Catering website
+      link(rel="stylesheet", href="assets/scss/myStyle.css")
+  body
+    .container
+        header
+            ul#myUL.heading
+                li.main: a(href='#') Gourmet au Catering
+                li(data-numb='0'): a(href='#') About
+                li(data-numb='1'): a(href='#') Menu
+                li(data-numb='2'): a(href='#') Contact
+        .pic-container    
+            img(src="img/hamburger.jpg")
+            h1 Le Catering
+        .inner-container
+            article#about(data-scroll='0')
+                img(src="img/tablesetting2.jpg", alt="restoraunt")
+                .about
+                    h1 About Catering
+                    h4 Tradition since 1889
+                    p The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use 
+                        span seasonal
+                        |  ingredients.
+                        // samo za velik ekran
+                    br
+                    em(style='display:none') Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+            hr
+            include assets/jade/myMixin
+            aside#menu(data-scroll='1')
+                .text-div
+                   h1 Our Menu
+                   +text("Bread Basket", "Assortment of fresh baked fruit breads and muffins 5.50")
+                   +text("Honey Almond Granola with Fruits", "Natural cereal of honey toasted oats, raisins, almonds and dates 7.00")
+                   +text("Belgian Waffle", "Vanilla flavored batter with malted flour 7.50")
+                   +text("Scrambled eggs", "Scrambled eggs, roasted red pepper and garlic, with green onions 7.50")
+                   +text("Blueberry Pancakes", "With syrup, butter and lots of berries 8.50")
+                img#myImg(src="img/tablesetting.jpg", alt="tbl")
+            hr
+
+            main#contact(data-scroll='2')
+                h1 Contact
+                p We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us
+
+                p.blue Catering Service, 42nd Living St, 43043 New York, NY
+
+                p You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:
+
+                form(action="#")
+                    input(type="text" placeholder='Name', required)
+                    input(type="number" placeholder='How Many People')
+                    input(type="datetime-local", value="2017-03-16T20:00")
+                    input(type="text" placeholder="Message \Special requirements")
+                    button#myBtn(onclick="alert('Your message will be sent')") SEND MESSAGE
+        footer
+            p Powered by 
+                a(href="#") Marko
+        
+        script(src='assets/js/myScript.js')
+            
+            
