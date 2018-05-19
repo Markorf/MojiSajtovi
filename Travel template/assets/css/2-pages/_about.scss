@@ -1,0 +1,28 @@
+section.about {
+    padding: .5rem;
+}
+
+iframe {
+    width: 100%;
+}
+.card {
+    padding: .3rem;
+    button:hover {
+        background: lighten(black, 25%) !important;
+        cursor: pointer;
+    }
+}
+.alert {
+    background: #e83a3a;
+    display: block;
+    width: 98%;
+    margin: 0 auto;
+    p {
+        margin-top: 1rem;
+    }
+}
+.col-sm-4{
+    .fa {
+        font-size: 1.3rem;
+    }
+}

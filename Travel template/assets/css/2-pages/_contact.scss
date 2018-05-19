@@ -1,0 +1,30 @@
+article.contact {
+    padding: 1rem;
+    .card{
+    background: red;
+        opacity: .7;
+        transition: opacity .4s linear 0s;
+        &:hover {
+            opacity: 1;
+        }
+        button {
+            width: 25%;
+            margin-top: 1rem;
+            &:hover {
+                background: red !important;
+            }
+        }
+    }
+    .subContact{
+        padding: 1rem;
+        .btn-black {
+            background: black;
+            color: white;
+            margin-top: .7rem;
+         }
+            input {
+                padding: 1rem;
+                margin-top: .8rem;
+            }
+        }
+    }

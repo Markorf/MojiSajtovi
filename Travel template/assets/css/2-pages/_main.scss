@@ -1,0 +1,52 @@
+main {
+    position: relative;
+    img {
+        max-width: 100%;
+        height: auto;
+        min-width: 1000px;
+    }
+    .card{
+        width: 60%;
+        padding: 0;
+        position: absolute;
+        border: none;
+        max-width: 700px;
+        left: 1rem;
+        top:50%;
+        transform: translate(0, -50%);
+        input {
+            color: grey;
+        }
+        &-header {
+            background: $main-clr;
+            color: white;
+            h2 {
+                font-weight: 400;
+            }
+            
+        }
+    }button {
+        width: 40%;
+        margin: .4rem 0 1rem 1.5rem;
+        padding: .5rem;
+        &:hover {
+            color: white;
+        }
+    }
+    
+}
+
+@media screen and (max-width:550px){
+    main {
+        .card {
+            width: 90%;
+            button {
+                width: 100%;
+                margin: 1rem auto;
+            }
+            input {
+                max-width: 100%;
+            }
+        }
+    }
+}

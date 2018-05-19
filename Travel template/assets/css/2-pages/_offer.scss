@@ -1,0 +1,25 @@
+section.offer{
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        transition: opacity .5s esae 0s;
+        &:hover {
+            opacity: .8;
+        }
+    }
+    .col-sm-6 {
+        margin-right: -1rem;
+        h3, h5 {
+            position: absolute;
+            bottom: 2rem;
+            left: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .offer img {
+        width: 100%;
+    }
+}
