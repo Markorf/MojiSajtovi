@@ -1,0 +1,96 @@
+body{
+    background: #a3aeff;   
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    border: 7px solid black;
+    border-bottom: 40px solid black;
+    margin:0 auto;
+    max-width: 50%;
+    min-width: 300px;
+    background: white;
+    height:70vh;
+}
+
+header {
+      background: rgba(211, 170, 16, 0.64);
+    display: flex;
+     justify-content: space-around;
+    min-height: 70px;
+    
+}
+header h2{
+    flex:1;
+    text-align: center;
+}
+
+button.back {
+    background: rgba(69, 68, 57, 0.42);
+    color: white;
+    font-weight: bold;
+}
+button.gear {
+    background: rgba(26, 26, 26, 0.28);
+    color: white;
+}
+header button {
+    height: 40px;
+    align-self: center;
+    margin: 10px;
+    cursor: pointer;
+}
+header button:hover {
+    background: rgba(21, 16, 16, 0.53);
+}
+main {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling:touch;
+}
+
+img#avatar {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    float: left;
+}
+
+nav {
+     background: rgba(211, 170, 16, 0.85);
+   /*Ne treba height */
+   
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+nav ul li {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid rgba(128, 113, 113, 0.53);
+    padding-top: 10px;
+  
+}
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+}
+nav ul li span {
+    color: white;
+}
+nav ul li:hover {
+    background: rgba(238, 238, 238, 0.35);
+}
+
+@media screen and (max-width:750px){
+    header h2{
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+}
