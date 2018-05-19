@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+    head
+        title Some new title
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        link(rel="stylesheet", href="style.css")
+
+     body 
+      .container
+           header
+               h2.pull-left MY ART
+               h2.pull-right ABOUT
+                 -var slike = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
+           .img-contain
+             .row
+               .col-sm-6
+              
+                -for(i=0; i<3; i++){
+                        img.myResp(src="img/#{slike[i]}", alt="artImg")
+                       -}
+               .col-sm-6
+                 -for(i=3; i<5; i++){
+                        img.myResp(src="img/#{slike[i]}", alt="artImg")
+                       -}
+           section.text-center
+               h2 ABOUT
+               .holder
+                   img#about(src="img/about-img.jpg", alt="at", width=300)
+                   #additional Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.  
+                   
+               p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo distinctio inventore nam quos, harum, soluta, ad voluptatibus asperiores vero veritatis dolores reprehenderit architecto tempora minima! Et dolorem alias maiores assumenda.
+               
+               h3.text-danger Do not contact me!
+               form
+                  .form-group
+                   label(for='text') Name
+                   input(type="text", id='text')
+                   label(for='email') Email
+                   input(type="email", id='email')
+                   label(for='comment') Message
+                   input(type="text", id='comment')
+                   input.btn.btn-primary(type='button', value='Send')
+                   
+           footer
+            p.text-center Coded by
+                a(href="#")  Marko
+                   
