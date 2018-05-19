@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="myStyle.css">
+    <title>The Cafe</title>
+  </head>
+  <body>
+    
+    <!--Navbar -->
+ <nav class="navbar navbar-toggleable-sm bg-inverse navbar-inverse fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    
+    <ul class="navbar-nav mt-0 mt-lg-0 row">
+     
+      <li class="nav-item active col-sm-3">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item col-sm-3">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item col-sm-3">
+        <a class="nav-link" href="#menu">Menu</a>
+      </li>
+      
+       <li class="nav-item col-sm-3">
+        <a class="nav-link" href="#where">Where</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+   
+   <header>
+   </header>
+   
+<div class="container" id="main">
+  <div class="row">   
+      <div class="col-lg-10 offset-lg-1 col-sm-12 offset-sm-0">
+   
+   <section class="sec1">
+      <h3 class="text-center">ABOUT THE CAFE</h3>
+       <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    
+    <blockquote class="blockquote">
+ <p class="text-muted">"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.
+<br>
+Chef, Coffeeist and Owner: Liam Brown</p>
+</blockquote>    
+   </section>
+    <section class="second" id="about">
+        <img src="img/coffeeshop.jpg" alt="">
+        <p class="lead">Opening hours: </p><span>everyday from 6am to 5pm</span> <br>
+        <p class="lead">Adress: </p><span>15 Adr street, 5015, NY</span>
+    </section>
+    
+        <section class="third" id="menu">
+                <h4 class="text-center menuh4">THE MENU</h4>
+                <div class="divContain">
+                    <a href="" onclick='displayz(event, this)' onmousedown="changeStyle(this)" id="myJelo" class="eat active">Eat</a>
+                    <a href="" onclick='displayz(event, this)' onmousedown="changeStyle(this)" id="myPice" class="drink">Drink</a>
+                    </div>
+                    <div class="innerDiv">
+                       <div id="jelo">
+                        <h4>Bread Basket</h4>
+                        <p class="text-muted">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                           <h4>Honey Almond Granola with Fruits</h4>
+                        <p class="text-muted">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                           <h4>Belgian Waffle</h4>
+                        <p class="text-muted">Vanilla flavored batter with malted flour 7.50</p>
+                           <h4>Scrambled eggs</h4>
+                        <p class="text-muted">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                           <h4>Blueberry Pancakes</h4>
+                        <p class="text-muted">With syrup, butter and lots of berries 8.50</p>
+                         </div> <!-- end of jelo -->
+                          <!--    -->
+                <div id="pice" style="display:none">        
+            <h5>Coffee</h5>
+                  <p class="text-muted">Regular coffee 2.50</p><br>
+
+                  <h5>Chocolato</h5>
+                  <p class="text-muted">Chocolate espresso with milk 4.50</p><br>
+
+                  <h5>Corretto</h5>
+                  <p class="text-muted">Whiskey and coffee 5.00</p><br>
+
+                  <h5>Iced tea</h5>
+                  <p class="text-muted">Hot tea, except not hot 3.00</p><br>
+
+                  <h5>Soda</h5>
+                  <p class="text-muted">Coke, Sprite, Fanta, etc. 2.50</p>
+                </div>  <!-- end of pice -->
+                        
+                </div>
+                                
+                <img class="myCoffe" src="img/coffeehouse2.jpg" alt="cc">              
+                <!-- Drinks -->    
+        </section>  
+        
+          <aside id="where">
+              <div class="card">
+              <h4 class='text-center card-header'>WHERE TO FIND US</h4></div>
+              <p>Find us at some address at some place.</p>
+              <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44922.04845577506!2d19.689366489960438!3d45.27552949927679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b0d85c5984365%3A0x11dd8ff5732a97a3!2z0KTRg9GC0L7Qsw!5e0!3m2!1ssr!2srs!4v1487020078156" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              
+              <p>
+                  <span>FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+                  <br> <br>
+<strong>Reserve</strong> a table, ask for today's special or just send us a message:
+              </p>
+          </aside>  
+          <form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Username</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Input username">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">People number</label>
+    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="How menu people">
+  </div>
+  
+   <div class="form-group">
+    <label for="formGroupExampleInput2">Date and time</label>
+    <input type="datetime-local" class="form-control" id="formGroupExampleInput2" value="2017-11-16T20:00">
+  </div>
+  
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Write some message</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Message \ Special requirements">
+  </div>
+  <button class="btn btn-primary pull-left">SEND MESSAGE</button>
+  
+</form>
+            </div> <!-- Imp div -->
+        </div>
+      </div>  
+    
+    <footer>
+    <p>Powered by <a href="#">Marko</a></p>
+</footer>    
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">            
+      </script>
+    <script>
+            var eat = document.querySelector('#jelo');
+        var drink = document.querySelector('#pice');
+         var prvi = document.getElementById('myJelo');
+        var drugi = document.getElementById('myPice');
+
+            function displayz(e, el){
+                e.preventDefault();
+                  (el.id == 'myJelo') ? (eat.style.display='block', drink.style.display ='none') : (eat.style.display = 'none', drink.style.display = 'block');
+        }
+
+    function changeStyle(elem){
+        (elem.id=='myJelo') ? (elem.className = 'eat active', drugi.style.color = 'black', drugi.style.backgroundColor = 'transparent' ) : (drugi.style.backgroundColor = 'grey', prvi.className = 'eat', drugi.style.color = 'white');
+    }
+      
+      
+      </script>
+  </body>
+</html>
